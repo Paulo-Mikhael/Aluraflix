@@ -95,6 +95,14 @@
   <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
   </a>
+  <script>
+    function adicionarFilme() {
+  var filmeFavorito = document.getElementById('filme').value;
+  var elementoListaFilmes = document.getElementById('listaFilmes');
+  elementoListaFilmes.innerHTML += '<img src=' + filmeFavorito + '>'
+  document.getElementById('filme').value=''
+}
+  </script>
 </body>
 
 </html>
